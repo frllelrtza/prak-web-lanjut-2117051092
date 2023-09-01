@@ -220,7 +220,7 @@
 
     <div class="heroe">
 
-        <h1>Welcome to CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
+        <h1>M. Al-Farrel E 2117051092 <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
 
         <h2>The small framework with powerful features</h2>
 
