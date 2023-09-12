@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 </head>
+<center>
 <body>
+<img src="<?= base_url('faphoto.jpg'); ?>" alt="Profile" height = "240" width = "220" margin= "auto">
     <table>
 <tr>
     <td>Nama</td>
@@ -27,4 +29,5 @@
 </table>
 
 </body>
+</center>
 </html>
