@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?=base_url("assets/css/style.css")?>">
-    <title>Profile</title>
-    <style>
-        .container{
-            margin-top: 200px;
-            
-        }
-    </style>
-</head>
-<center>
-<body>
-    <div class="container1">
+<?= $this->extend('layouts/app') ?>
+
+<?= $this->section('content') ?>   
+<div class="container1">
+    <div class="profile">
 <img src="<?= base_url('assets/img/faphoto.jpg'); ?>" alt="Profile" height = "240" width = "220"  >
     <table>
 <tr>
@@ -37,6 +25,5 @@
 </table>
 
 </div>
-</body>
-</center>
-</html>
+</div>
+<?= $this->endSection() ?>

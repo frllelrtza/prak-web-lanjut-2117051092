@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?=base_url("assets/css/style.css")?>">
+    <?= $this->extend('layouts/app') ?>
 
-    <title>Create User</title>
-</head>
-<body>
+    <?= $this->section('content') ?>    
+
     <div class="container2">
+    <div class="create_user">
+      
     <form action="<?=base_url('/user/store')?>" method = 'post'>
         <label for="nama">Nama</label>
         <input type="text" name="nama"<?= session('validation') && session('validation')->hasError('nama') ? 'is-invalid' : '' ?>" id="floatingName" placeholder="Nama" name="nama" value="<?= old('nama') ?>">><br> 
@@ -45,5 +41,5 @@
         <input type="Submit">
     </form>
     </div>
-</body>
-</html>
+    </div>
+<?= $this->endSection() ?>
