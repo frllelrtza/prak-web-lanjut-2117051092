@@ -5,9 +5,9 @@
     <div class="container2">
     <div class="create_user">
       
-    <form action="<?=base_url('/user/store')?>" method = 'post'>
+    <form action="<?=base_url('/user/store')?>" method = 'post' enctype='multipart/form-data'>
         <label for="nama">Nama</label>
-        <input type="text" name="nama"<?= session('validation') && session('validation')->hasError('nama') ? 'is-invalid' : '' ?>" id="floatingName" placeholder="Nama" name="nama" value="<?= old('nama') ?>">><br> 
+        <input type="text" name="nama"<?= session('validation') && session('validation')->hasError('nama') ? 'is-invalid' : '' ?>" id="floatingName" placeholder="Nama" name="nama" value="<?= old('nama') ?>"><br> 
         <?php if (session('validation') && session('validation')->hasError('nama')) : ?>
           <div class="invalid-feedback">
             <?= session('validation')->getError('nama'); ?>
@@ -36,7 +36,8 @@
             </td>
         </tr>
 
-
+        <label for ="foto" class="foto">Foto</label>
+        <input type="file" name="foto">
 
         <input type="Submit">
     </form>
