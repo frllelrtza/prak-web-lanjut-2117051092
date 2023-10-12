@@ -4,6 +4,7 @@
 <div class="container3">
   <div class="table_user">
     <h3>Tabel User</h3>
+    <a href="<?= base_url('user/create')?>" class="Tambah">Tambah Data</a>
     <table>
       <thead>
         <tr>
@@ -24,7 +25,7 @@
             <td><?= $user['npm'] ?></td>
             <td><?= $user['nama_kelas'] ?></td>
             <td>
-              <a class="btn_detail" href="">Detail</a>
+              <a class="btn_detail" href="<?= base_url('user/'. $user['id'])?>">Detail</a>
               <a class="btn_edit" href="">Edit</a>
               <a class="btn_hapus" href="">Hapus</a>
 
