@@ -106,6 +106,7 @@ input[type="submit"] {
   color: #fff;
   border: none;
   border-radius: 3px;
+  font-size: 12px;
 }
 
 .btn_edit {
@@ -149,4 +150,10 @@ td {
 /* Style table rows */
 .table_user tbody tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+.col_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

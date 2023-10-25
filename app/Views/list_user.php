@@ -25,13 +25,16 @@
             <td><?= $user['npm'] ?></td>
             <td><?= $user['nama_kelas'] ?></td>
             <td>
-              <a class="btn_detail" href="<?= base_url('user/'. $user['id'])?>">Detail</a>
-              <a class="btn_edit" href="<?= base_url('user/' . $user['id'] . '/edit')?>">Edit</a>
-              <form class="btn_hapus" action="<?= base_url('user/' . $user['id']) ?>" method ="post">
-              <input type='hidden' name='_method' value="DELETE">
-              <? csrf_field() ?>
-              <a type="submit">Delete</a>
-              </form>
+              <div class="col_btn">
+
+                <a class="btn_detail me-2" href="<?= base_url('user/'. $user['id'])?>">Detail</a>
+                <a class="btn_edit me-2" href="<?= base_url('user/' . $user['id'] . '/edit')?>">Edit</a>
+                <form action="<?= base_url('user/' . $user['id']) ?>" method ="post">
+                <input type='hidden' name='_method' value="DELETE">
+                <? csrf_field() ?>
+                <button class="btn_hapus" type="submit">Delete</button>
+                </form>
+              </div>
 
             </td>
           </tr>
