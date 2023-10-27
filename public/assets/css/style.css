@@ -1,159 +1,137 @@
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #fce09b !important;
+  color: #b2533e !important;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: rgb(183, 154, 110);
-  margin: 0;
-  padding: 0;
+.user {
+  padding: 120px 0px;
+  margin-left: 250px;
+}
+
+.create_user {
+  height: 100vh;
+  padding: 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  margin-left: 160px;
+  font-weight: 700;
 }
 
-.container1 {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 5px;
+.profile {
+  /* width: 100%; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile_content {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  background-color: #ffffff;
+  margin-left: 160px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Garis pinggiran kontainer */
+  border-radius: 5px; /* Sudut melengkung kontainer */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container2 {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 7px;
+.foto {
+  background-color: #186f65;
+  padding: 20px;
+  border: 1px solid #ccc; /* Garis pinggiran kontainer */
+  border-radius: 5px; /* Sudut melengkung kontainer */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 230px;
-  width: 250px;
 }
 
-.container2 form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 12px;
-  background-color: blanchedalmond;
-  border-radius: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 2px;
-  margin-top: 5px;
-  font-weight: bolder;
-}
-
-input {
-  width: 90%;
-  margin: 3px;
-  padding: 5px;
-  font-size: 100;
-}
-
-input[type="submit"] {
-  margin-top: 2px;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.container3 {
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 80px;
-  padding-left: 80px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.profile table {
-  width: 100%;
-  margin-top: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bolder;
-}
-
-.profile table td {
-  padding: 5px 10px;
-}
-
-.container1 img {
-  border: 7px solid #121111;
-}
-
-.btn_detail,
-.btn_edit,
-.btn_hapus {
-  display: inline-block;
-  padding: 5px 10px;
-  margin-right: 5px;
-  text-decoration: none;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: 12px;
-}
-
-.btn_edit {
-  background-color: #28a745;
-}
-
-.btn_hapus {
-  background-color: #dc3545;
-}
-
-/* Hover effect for buttons */
-.table_user .btn_detail:hover,
-.btn_edit:hover,
-.btn_hapus:hover {
-  background-color: #0056b3;
-}
-
-.table_user h3 {
-  font-size: 24px;
+img .img-thumbnail {
   margin-bottom: 10px;
 }
 
-.table_user table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+.border_user {
+  border: 2px solid #ccc; /* Garis pinggiran kontainer */
+  border-radius: 5px; /* Sudut melengkung kontainer */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  background-color: #186f65;
 }
 
-.table_user th,
-td {
-  padding: 10px;
-  text-align: left;
-}
-
-/* Style table header */
-.table_user thead {
-  background-color: #333;
+.nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 700;
   color: #fff;
+  border: 2px solid #ccc;
 }
 
-/* Style table rows */
-.table_user tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+.nav-item {
+  padding: 10px 5px;
 }
 
-.col_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #186f65;
+  padding-top: 20px;
+  color: #b2533e;
+  transition: left 0.3s;
 }
+
+.sidebar a {
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+/* Custom styles for the content */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* Custom styles for the sidebar header */
+.sidebar-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar-header h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table thead,
+tr,
+th,
+td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.user h3 {
+  margin-left: 400px;
+}
+
